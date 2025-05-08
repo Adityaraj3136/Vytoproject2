@@ -1,0 +1,157 @@
+/* Basic Reset and Background */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e8f5e9, #ffffff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 20px;
+  }
+  
+  /* Card Container */
+  main {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+  }
+  
+  label {
+    font-weight: 500;
+    color: #2e7d32;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  label i {
+    margin-right: 8px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  /* Button */
+  button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Results Section */
+  #results {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+  }
+  
+  #results h2 {
+    color: #388e3c;
+    margin-bottom: 10px;
+  }
+  
+  #chart {
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+  
+  #advice {
+    font-weight: bold;
+    color: #2e7d32;
+  }
+  
+  /* Circular Progress Ring */
+  .progress-circle-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+  }
+  
+  .progress-ring {
+    transform: rotate(-90deg);
+  }
+  
+  .progress-ring circle {
+    fill: none;
+    stroke-width: 10;
+  }
+  
+  .progress-ring .bg {
+    stroke: #eee;
+  }
+  
+  .progress-ring .progress {
+    stroke: #4CAF50;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    transition: stroke-dashoffset 0.6s ease;
+  }
+  
+  .percentage-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #2e7d32;
+    font-size: 1.2em;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #888;
+  }
+  
+  /* Hide initially */
+  .hidden {
+    display: none;
+  }
+
+  
+  /* Responsive Tweaks */
+  @media (max-width: 480px) {
+    form label, input, button {
+      font-size: 0.95em;
+    }
+  }
+  

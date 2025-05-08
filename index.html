@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carbon Footprint Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <header>
+    <h1>Carbon Footprint Calculator</h1>
+  </header>
+
+  <main>
+    <form id="footprintForm">
+      <label>
+        <i class="fas fa-car-side"></i> Daily Car Travel (km)
+        <input type="number" id="carKm" />
+      </label>
+      <label>
+        <i class="fas fa-wind"></i> Hours of AC Usage
+        <input type="number" id="acHours" />
+      </label>
+      <label>
+        <i class="fas fa-drumstick-bite"></i> Meat Meals per Week
+        <input type="number" id="meatMeals" />
+      </label>
+      <button type="submit"><i class="fas fa-calculator"></i> Calculate</button>
+    </form>
+
+    <section id="results" class="hidden">
+      <h2>Your Carbon Footprint</h2>
+
+      <div class="progress-circle-container">
+        <svg class="progress-ring" width="120" height="120">
+          <circle class="bg" r="50" cx="60" cy="60" />
+          <circle class="progress" r="50" cx="60" cy="60" />
+        </svg>
+        <div class="percentage-text" id="percentageValue">0%</div>
+      </div>
+
+      <canvas id="chart"></canvas>
+      <p id="advice">
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Reduce your carbon impact. Every step counts!</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

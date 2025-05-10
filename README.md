@@ -1,2 +1,3 @@
-# Vyto-Project-1
-Project 1 mood journal offline web application
+# Vyto-Project-2
+Project 2 Carbon Footprint Calculator
+Language used HTML,CSS,Javascript
